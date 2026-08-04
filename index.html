@@ -137,7 +137,7 @@
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 11H4v-2h11v2zm3-4H4V9h14v2z"/></svg>
         </div>
         <div>
-          <div class="service-title">Frontends con Vue</div>
+          <div class="service-title">Vue Architecture</div>
           <div class="service-desc">Vue 2/3, Nuxt, Pinia, Vuex, Vuetify e integración con APIs y motores de formularios a medida.</div>
         </div>
       </div>
@@ -172,48 +172,43 @@
 
     <div class="skills-section">
       <h3 class="skills-subtitle">Habilidades</h3>
-      <div class="skills-grid">
-        <div class="skill-chip"><div class="skill-name">Vue.js</div></div>
-        <div class="skill-chip"><div class="skill-name">Nuxt.js</div></div>
-        <div class="skill-chip"><div class="skill-name">AngularJS</div></div>
-        <div class="skill-chip"><div class="skill-name">TypeScript</div></div>
-        <div class="skill-chip"><div class="skill-name">Laravel</div></div>
-        <div class="skill-chip"><div class="skill-name">Node.js</div></div>
-        <div class="skill-chip"><div class="skill-name">Express.js</div></div>
-        <div class="skill-chip"><div class="skill-name">Pinia / Vuex</div></div>
-        <div class="skill-chip"><div class="skill-name">Vuetify</div></div>
-        <div class="skill-chip"><div class="skill-name">Bootstrap</div></div>
-        <div class="skill-chip"><div class="skill-name">React</div></div>
-        <div class="skill-chip"><div class="skill-name">MySQL</div></div>
-        <div class="skill-chip"><div class="skill-name">Redis</div></div>
-        <div class="skill-chip"><div class="skill-name">PostgreSQL</div></div>
-        <div class="skill-chip"><div class="skill-name">Git</div></div>
-        <div class="skill-chip"><div class="skill-name">AWS / Forge / Nginx</div></div>
+      <div class="skills-grid" id="skills-grid">
+        <div class="skill-chip" data-skill="vue"><div class="skill-name">Vue.js</div></div>
+        <div class="skill-chip" data-skill="nuxt"><div class="skill-name">Nuxt.js</div></div>
+        <div class="skill-chip" data-skill="angularjs"><div class="skill-name">AngularJS</div></div>
+        <div class="skill-chip" data-skill="typescript"><div class="skill-name">TypeScript</div></div>
+        <div class="skill-chip" data-skill="laravel"><div class="skill-name">Laravel</div></div>
+        <div class="skill-chip" data-skill="nodejs"><div class="skill-name">Node.js</div></div>
+        <div class="skill-chip" data-skill="express"><div class="skill-name">Express.js</div></div>
+        <div class="skill-chip" data-skill="pinia"><div class="skill-name">Pinia / Vuex</div></div>
+        <div class="skill-chip" data-skill="vuetify"><div class="skill-name">Vuetify</div></div>
+        <div class="skill-chip" data-skill="bootstrap"><div class="skill-name">Bootstrap</div></div>
+        <div class="skill-chip" data-skill="react"><div class="skill-name">React</div></div>
+        <div class="skill-chip" data-skill="mysql"><div class="skill-name">MySQL</div></div>
+        <div class="skill-chip" data-skill="redis"><div class="skill-name">Redis</div></div>
+        <div class="skill-chip" data-skill="postgres"><div class="skill-name">PostgreSQL</div></div>
+        <div class="skill-chip" data-skill="git"><div class="skill-name">Git</div></div>
+        <div class="skill-chip" data-skill="aws"><div class="skill-name">AWS / Forge / Nginx</div></div>
       </div>
     </div>
   </section>
 
   <!-- RESUME TAB -->
   <section class="content-card" id="tab-resume">
-    <h2 class="section-title">Currículum</h2>
-    <div class="title-line"></div>
-
-    <div class="resume-section">
-      <div class="resume-section-title">
-        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
-        Formación
+    <div class="resume-header">
+      <div>
+        <h2 class="section-title">Currículum</h2>
+        <div class="title-line"></div>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-title">Vue Mastery</div>
-            <div class="timeline-sub">Ruta beginner de Vue 2 y Vue 3</div>
-            <div class="timeline-date">2026</div>
-          </div>
-        </div>
-      </div>
+      <a href="assets/juan_hernandez_cv_2026.pdf" download="Juan_Hernandez_CV_2026.pdf" class="cv-download-btn" aria-label="Descargar currículum en PDF">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Descargar CV
+      </a>
     </div>
+
+    <p class="about-text resume-summary">
+      Full Stack Developer con más de 6 años de experiencia liderando migraciones técnicas, remediaciones WCAG y modernización de arquitecturas en e-commerce, inmobiliaria y startups. Experto en JavaScript y Laravel, con foco en impacto medible en costo, estabilidad y experiencia de usuario.
+    </p>
 
     <div class="resume-section">
       <div class="resume-section-title">
@@ -225,29 +220,29 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-title">Fullstack Developer</div>
-            <div class="timeline-sub">Proyectos Luccitti C.A · Venezuela · Remoto · Freelance</div>
-            <div class="timeline-date">Abr 2025 — Actualidad</div>
-            <div class="timeline-sub" style="margin-top:8px;opacity:0.85;font-size:13px;">AngularJS 1.5, Laravel, Vue, Google Maps API</div>
+            <div class="timeline-sub">Proyectos Luccitti C.A · Venezuela · Remoto</div>
+            <div class="timeline-date">Proyectos destacados</div>
+            <div class="timeline-tags">AngularJS 1.5 · Laravel · Vue 2/3 · Google Maps API</div>
             <ul class="timeline-bullets">
-              <li>Lideré una remediación de accesibilidad (WCAG EE. UU.) en una plataforma inmobiliaria: VoiceOver, navegación por teclado en vistas de plugins y corrección de contraste en todo el sitio.</li>
-              <li>Optimicé un plugin PHP para XML personalizado e integración masiva con Homes.com en proyectos activos.</li>
-              <li>Migración de Google Maps API en más de 20 proyectos (Vue 3, Vue 2, AngularJS) antes del fin de la versión legacy.</li>
+              <li>Remediación WCAG completa en plataforma inmobiliaria (VoiceOver, teclado, contraste).</li>
+              <li>Plugin PHP/XML centralizado con integración masiva a Homes.com.</li>
+              <li>Migración de Google Maps API en +20 proyectos antes del fin de la versión legacy.</li>
+              <li>Sistema full-stack de matching de compradores con integración HubSpot CRM.</li>
             </ul>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <div class="timeline-title">Fullstack Developer</div>
-            <div class="timeline-sub">Thefutures · UK · Remoto · Full time</div>
+            <div class="timeline-title">Full Stack Developer</div>
+            <div class="timeline-sub">TheFutures.io · UK · Remoto · Full time</div>
             <div class="timeline-date">Mar 2021 — Actualidad</div>
-            <div class="timeline-sub" style="margin-top:8px;opacity:0.85;font-size:13px;">Vue 2/3, Laravel, OpenAI, Forge, Vuex, Pinia, Inertia, Nuxt.js</div>
+            <div class="timeline-tags">Vue 2/3 · Laravel · Nuxt · Pinia · TypeScript · OpenAI · Redis</div>
             <ul class="timeline-bullets">
-              <li>Reemplacé Survey.js por un motor de formularios dinámico en Vue, eliminando suscripción (~200 USD/mes) y reduciendo bundle.</li>
-              <li>Redis para caché en servidor: mejora notable en carga de la tienda (hasta ~50%).</li>
-              <li>Mejora de compilación (~5%): SCSS independiente con Laravel Mix y caché de CSS en Blade.</li>
-              <li>Abstracción para compras de producto único; patrones Repository y Decorator en Laravel; entidades tipadas en JS (User, Store, etc.) desacopladas de Vue.</li>
-              <li>CRUD en microservicio de usuarios para contenido exclusivo, desacoplado del monolito.</li>
+              <li>Wrapper Retell AI para llamadas web con prompts por vertical de negocio.</li>
+              <li>Agente de chat con IA fuera de horario; motor de formularios propio (reemplazo de Survey.js, −200 USD/mes).</li>
+              <li>Caché Redis en servidor y patrones Repository/Decorator en Laravel.</li>
+              <li>Entidades tipadas en JS y CRUD en microservicio de usuarios desacoplado del monolito.</li>
             </ul>
           </div>
         </div>
@@ -257,13 +252,36 @@
             <div class="timeline-title">Laravel Developer</div>
             <div class="timeline-sub">Vivetix · España · Remoto · Full time</div>
             <div class="timeline-date">May 2020 — May 2021</div>
-            <div class="timeline-sub" style="margin-top:8px;opacity:0.85;font-size:13px;">Laravel, jQuery, Bootstrap, React</div>
+            <div class="timeline-tags">Laravel · Bootstrap · React · jQuery</div>
             <ul class="timeline-bullets">
-              <li>API REST para eventos y métodos de pago, consumible por web y apps externas.</li>
-              <li>Integración iLovePDF para optimización y compresión de adjuntos (~50% menos tiempo de soporte en archivos).</li>
-              <li>Métricas transaccionales con servicios y Google Analytics API.</li>
-              <li>Migración Bootstrap v3.3 → v5.0 en módulos críticos (dashboard, foro, pagos, white label).</li>
+              <li>API REST para eventos y pagos, consumible por web y equipos externos.</li>
+              <li>Integración iLovePDF (−50% tiempo de soporte en archivos adjuntos).</li>
+              <li>Métricas de ventas con Google Analytics API; migración Bootstrap v3.3 → v5.0.</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <div class="resume-section-title">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        Formación
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-title">Licenciatura en Informática</div>
+            <div class="timeline-sub">Universidad de Oriente, Venezuela — en proceso de tesis</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-title">Vue Mastery · Platzi · EngliSharks</div>
+            <div class="timeline-sub">Vue 2/3, Web Scraping con Python, JavaScript OOP, inglés B1</div>
+            <div class="timeline-date">2025 — 2026</div>
           </div>
         </div>
       </div>
@@ -274,7 +292,7 @@
         <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
         Herramientas y flujo
       </div>
-      <p class="about-text" style="margin-top:0;">Jira, Confluence, Slack, Trello · metodologías Scrum / Agile.</p>
+      <p class="about-text" style="margin-top:0;">Git · AWS · Forge · Nginx · Cursor · Jira · Confluence · Slack · Scrum / Agile.</p>
     </div>
   </section>
 
@@ -282,57 +300,47 @@
   <section class="content-card" id="tab-portfolio">
     <h2 class="section-title">Portafolio</h2>
     <div class="title-line"></div>
-    <p class="about-text" style="margin-top:0;">Aquí puedes enlazar casos reales (demo, repo o estudio). Los ítems siguientes son marcadores de posición para que los sustituyas.</p>
-
     <div class="portfolio-filters">
       <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="applications">Aplicaciones</button>
+      <!-- <button class="filter-btn" data-filter="applications">Aplicaciones</button> -->
       <button class="filter-btn" data-filter="web">Web</button>
-      <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      <button class="filter-btn" data-filter="api">API</button>
+      <!-- <button class="filter-btn" data-filter="uiux">UI/UX</button> -->
+      <!-- <button class="filter-btn" data-filter="tools">Herramientas</button> -->
     </div>
 
     <div class="portfolio-grid">
       <div class="project-card" data-cat="web" onclick="window.open('https://defutbolpoco.netlify.app/', '_blank')">
         <div class="project-thumb" style="background:#1a2332;">
-          <img src="assets/de-futbol-poco-proyecto.png" alt="Proyecto web" width="100%" height="100%">
-          <!-- <svg width="48" height="48" viewBox="0 0 24 24" fill="#4a90e2"><path d="M17 2H7C5.34 2 4 3.34 4 5v14c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3zm-5 15c-.83 0-1.5-.67-1.5-1.5S11.17 14 12 14s1.5.67 1.5 1.5S12.83 17 12 17zm5-4H7V5h10v8z"/></svg> -->
+          <img src="assets/de-futbol-poco-proyecto.png" alt="De futbol poco — proyecto web" width="100%" height="100%">
         </div>
         <div class="project-info">
           <div class="project-name">De futbol poco</div>
-          <div class="project-cat">Web para armar tu equipo de futbol</div>
+          <div class="project-cat">Web · armar tu equipo de fútbol</div>
         </div>
       </div>
-      <div class="project-card" data-cat="applications">
-        <div class="project-thumb" style="background:#0a1628;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="#e8b84b"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <div class="project-card" data-cat="api" onclick="window.open('https://github.com/juanhm93/api-playing-field', '_blank')">
+        <div class="project-thumb" style="background:#1a2332;">
+          <img src="assets/de-futbol-poco-proyecto.png" alt="API Playing Field — backend de De futbol poco" width="100%" height="100%">
         </div>
         <div class="project-info">
-          <div class="project-name">Proyecto (placeholder)</div>
-          <div class="project-cat">Aplicaciones — edita título y enlace</div>
-        </div>
-      </div>
-      <div class="project-card" data-cat="applications">
-        <div class="project-thumb" style="background:#1e1a2e;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="#a855f7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        </div>
-        <div class="project-info">
-          <div class="project-name">Proyecto (placeholder)</div>
-          <div class="project-cat">Aplicaciones — edita título y enlace</div>
+          <div class="project-name">API Playing Field</div>
+          <div class="project-cat">API · backend de De futbol poco</div>
         </div>
       </div>
       <div class="project-card" data-cat="web">
         <div class="project-thumb" style="background:#1f1a1a;">
-          <img src="assets/cubaniasc-proyecto.png" alt="Proyecto web" width="100%" height="100%">
-          <!-- <svg width="48" height="48" viewBox="0 0 24 24" fill="#e74c3c"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 11H4v-2h11v2zm3-4H4V9h14v2z"/></svg> -->
+          <img src="assets/cubaniasc-proyecto.png" alt="Cubania academia de salsa" width="100%" height="100%">
         </div>
         <div class="project-info">
           <div class="project-name">Cubania academia de salsa</div>
-          <div class="project-cat">Web para la academia de baile</div>
+          <div class="project-cat">Web · academia de baile</div>
         </div>
       </div>
+      <!--
       <div class="project-card" data-cat="applications">
-        <div class="project-thumb" style="background:#1a2a1e;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="#2ecc71"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <div class="project-thumb" style="background:#0a1628;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="#e8b84b"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
         <div class="project-info">
           <div class="project-name">Proyecto (placeholder)</div>
@@ -355,6 +363,16 @@
           <div class="project-cat">UI/UX — edita título y enlace</div>
         </div>
       </div>
+      <div class="project-card" data-cat="tools">
+        <div class="project-thumb" style="background:#1a2a1e;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="#2ecc71"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        </div>
+        <div class="project-info">
+          <div class="project-name">Compresor de imágenes (Python)</div>
+          <div class="project-cat">Herramientas — script para reducir calidad/peso de imágenes</div>
+        </div>
+      </div>
+      -->
     </div>
   </section>
 
@@ -462,6 +480,53 @@
       });
     });
   });
+
+  // Skills stack glow — combinaciones de proyectos reales
+  const skillColors = {
+    vue: 'green', nuxt: 'green', vuetify: 'green', nodejs: 'green',
+    angularjs: 'red', laravel: 'red', git: 'red', redis: 'red',
+    react: 'blue', typescript: 'blue', mysql: 'blue', postgres: 'blue',
+    aws: 'yellow', pinia: 'yellow', express: 'yellow',
+    bootstrap: 'purple'
+  };
+
+  const skillStacks = [
+    ['vue', 'laravel', 'mysql', 'typescript'],           // Inmobiliaria / Luccitti
+    ['nodejs', 'react', 'express', 'postgres'],            // API moderna
+    ['vue', 'nuxt', 'pinia', 'vuetify'],                   // Ecosistema Vue SPA
+    ['angularjs', 'laravel', 'mysql', 'git'],              // Legacy inmobiliaria
+    ['vue', 'laravel', 'redis', 'typescript'],             // TheFutures SaaS
+    ['nodejs', 'express', 'mysql', 'aws'],                 // Backend cloud
+    ['react', 'typescript', 'postgres', 'git'],            // Vivetix / dashboard
+    ['vue', 'nuxt', 'laravel', 'redis'],                   // Full-stack Nuxt
+    ['bootstrap', 'laravel', 'react', 'mysql'],            // Vivetix migración
+    ['vue', 'vuetify', 'pinia', 'typescript'],             // Frontend architecture
+    ['nodejs', 'express', 'postgres', 'redis'],            // Microservicios
+    ['aws', 'nodejs', 'express', 'git']                    // DevOps + API
+  ];
+
+  const skillChips = document.querySelectorAll('.skill-chip[data-skill]');
+  let stackIndex = 0;
+
+  function applySkillStack(stack) {
+    skillChips.forEach(chip => {
+      const skill = chip.dataset.skill;
+      const color = stack.includes(skill) ? skillColors[skill] : null;
+      if (color) {
+        chip.setAttribute('data-glow', color);
+      } else {
+        chip.removeAttribute('data-glow');
+      }
+    });
+  }
+
+  function cycleSkillStacks() {
+    applySkillStack(skillStacks[stackIndex]);
+    stackIndex = (stackIndex + 1) % skillStacks.length;
+  }
+
+  cycleSkillStacks();
+  setInterval(cycleSkillStacks, 2800);
 </script>
 </body>
 </html>
