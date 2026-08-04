@@ -286,7 +286,7 @@ body {
   background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 14px;
+  padding: 7px 14px;
   text-align: center;
   font-size: 12px;
   font-weight: 500;
@@ -295,7 +295,7 @@ body {
   cursor: default;
 }
 .skill-chip:hover { border-color: var(--gold); color: var(--gold); background: rgba(232,184,75,0.05); }
-.skill-chip .skill-name { margin-top: 6px; }
+.skill-chip .skill-name { margin-top: 3px; }
 
 /* Skill glow colors — semáforo por tecnología */
 .skill-chip[data-glow="green"] {
