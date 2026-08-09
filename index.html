@@ -297,69 +297,146 @@
     <h2 class="section-title">Portafolio</h2>
     <div class="title-line"></div>
     <div class="portfolio-filters">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <!-- <button class="filter-btn" data-filter="applications">Aplicaciones</button> -->
-      <button class="filter-btn" data-filter="web">Web</button>
-      <button class="filter-btn" data-filter="api">API</button>
-      <button class="filter-btn" data-filter="wordpress">WordPress</button>
-      <!-- <button class="filter-btn" data-filter="uiux">UI/UX</button> -->
-      <!-- <button class="filter-btn" data-filter="tools">Herramientas</button> -->
+      <button class="filter-btn active" data-filter="all" data-filter-group="all">Todos</button>
+      <button class="filter-btn" data-filter="personal" data-filter-group="ownership">Personales</button>
+      <button class="filter-btn" data-filter="client" data-filter-group="ownership">Clientes</button>
+      <button class="filter-btn" data-filter="collab" data-filter-group="ownership">Colaborativos</button>
+      <span class="filter-sep" aria-hidden="true"></span>
+      <button class="filter-btn" data-filter="web" data-filter-group="cat">Web</button>
+      <button class="filter-btn" data-filter="api" data-filter-group="cat">API</button>
+      <button class="filter-btn" data-filter="wordpress" data-filter-group="cat">WordPress</button>
     </div>
 
     <div class="portfolio-grid">
-      <div class="project-card" data-cat="web" onclick="window.open('https://defutbolpoco.netlify.app/', '_blank')">
+      <div class="project-card" data-cat="web" data-ownership="collab" onclick="window.open('https://www.thefutures.io/', '_blank')">
         <div class="project-thumb" style="background:#1a2332;">
-          <img src="assets/de-futbol-poco-proyecto.png" alt="De futbol poco — proyecto web" width="100%" height="100%">
+          <span class="project-badge collab">Colaborativo</span>
+          <img src="assets/www.thefutures.io.png" alt="The Futures — proyecto web" width="100%" height="100%">
         </div>
         <div class="project-info">
-          <div class="project-name">De futbol poco</div>
-          <div class="project-cat">Web · armar tu equipo de fútbol</div>
+          <div class="project-name">The Futures</div>
+          <div class="project-cat">Web · The Futures</div>
+          <div class="project-tech">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Nuxt.js</span>
+            <span class="tech-tag">Node.js</span>
+          </div>
         </div>
       </div>
-      <div class="project-card" data-cat="api" onclick="window.open('https://github.com/juanhm93/api-playing-field', '_blank')">
+      <div class="project-card" data-cat="web" data-ownership="collab" onclick="window.open('https://www.thefutures.io/', '_blank')">
         <div class="project-thumb" style="background:#1a2332;">
-          <img src="assets/de-futbol-poco-proyecto.png" alt="API Playing Field — backend de De futbol poco" width="100%" height="100%">
+          <span class="project-badge collab">Colaborativo</span>
+          <img src="assets/www.briefee.com.png" alt="Briefee — proyecto web" width="100%" height="100%">
         </div>
         <div class="project-info">
-          <div class="project-name">API Playing Field</div>
-          <div class="project-cat">API · backend de De futbol poco</div>
+          <div class="project-name">Briefee</div>
+          <div class="project-cat">Web · Briefee</div>
+          <div class="project-tech">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">Node.js</span>
+
+          </div>
         </div>
       </div>
-      <div class="project-card" data-cat="web" onclick="window.open('https://cubania.purphura.com/', '_blank')">
-        <div class="project-thumb" style="background:#1f1a1a;">
-          <img src="assets/cubaniasc-proyecto.png" alt="Cubania academia de salsa" width="100%" height="100%">
+      <div class="project-card" data-cat="web" data-ownership="collab" onclick="window.open('https://www.thefutures.io/', '_blank')">
+        <div class="project-thumb" style="background:#1a2332;">
+          <span class="project-badge collab">Colaborativo</span>
+          <img src="assets/oatberry.ai.png" alt="Oatberry — proyecto web" width="100%" height="100%">
         </div>
         <div class="project-info">
-          <div class="project-name">Cubania academia de salsa</div>
-          <div class="project-cat">Web · academia de baile</div>
+          <div class="project-name">Oatberry</div>
+          <div class="project-cat">Web · Oatberry</div>
+          <div class="project-tech">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">OpenAI|Anthropic</span>
+          </div>
         </div>
       </div>
-      <div class="project-card" data-cat="wordpress" onclick="window.open('https://sprintven.com', '_blank')">
+      <div class="project-card" data-cat="wordpress" data-ownership="client" onclick="window.open('https://sprintven.com', '_blank')">
         <div class="project-thumb" style="background:#1f1a1a;">
+          <span class="project-badge client">Cliente</span>
           <img src="assets/sprintvencom.png" alt="Sprintven" width="100%" height="100%">
         </div>
         <div class="project-info">
           <div class="project-name">Sprintven</div>
           <div class="project-cat">Web · sprintven</div>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+          </div>
         </div>
       </div>
-      <div class="project-card" data-cat="web" onclick="window.open('http://quality-image.purphura.com/', '_blank')">
+      <div class="project-card" data-cat="web" data-ownership="personal" onclick="window.open('https://defutbolpoco.netlify.app/', '_blank')">
+        <div class="project-thumb" style="background:#1a2332;">
+          <span class="project-badge">Personal</span>
+          <img src="assets/de-futbol-poco-proyecto.png" alt="De futb  ol poco — proyecto web" width="100%" height="100%">
+        </div>
+        <div class="project-info">
+          <div class="project-name">De futbol poco</div>
+          <div class="project-cat">Web · armar tu equipo de fútbol</div>
+          <div class="project-tech">
+            <span class="tech-tag">Vue.js</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="api" data-ownership="personal" onclick="window.open('https://github.com/juanhm93/api-playing-field', '_blank')">
+        <div class="project-thumb" style="background:#1a2332;">
+          <span class="project-badge">Personal</span>
+          <img src="assets/de-futbol-poco-proyecto.png" alt="API Playing Field — backend de De futbol poco" width="100%" height="100%">
+        </div>
+        <div class="project-info">
+          <div class="project-name">API Playing Field</div>
+          <div class="project-cat">API · backend de De futbol poco</div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-cat="web" data-ownership="personal" onclick="window.open('https://cubania.purphura.com/', '_blank')">
         <div class="project-thumb" style="background:#1f1a1a;">
+          <span class="project-badge">Personal</span>
+          <img src="assets/cubaniasc-proyecto.png" alt="Cubania academia de salsa" width="100%" height="100%">
+        </div>
+        <div class="project-info">
+          <div class="project-name">Cubania academia de salsa</div>
+          <div class="project-cat">Web · academia de baile</div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">React</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project-card" data-cat="web" data-ownership="personal" onclick="window.open('http://quality-image.purphura.com/', '_blank')">
+        <div class="project-thumb" style="background:#1f1a1a;">
+          <span class="project-badge">Personal</span>
           <img src="assets/quality-image.purphura.com.png" alt="Quality Image" width="100%" height="100%">
         </div>
         <div class="project-info">
           <div class="project-name">Quality Image</div>
           <div class="project-cat">Web · quality image</div>
-        </div>  
+          <div class="project-tech">
+            <span class="tech-tag">PHP</span>
+          </div>
+        </div>
       </div>
-      <div class="project-card" data-cat="web" onclick="window.open('http://quality-image.purphura.com/', '_blank')">
+      <div class="project-card" data-cat="web" data-ownership="personal" onclick="window.open('https://insumos-organizados-ve.netlify.app/', '_blank')">
         <div class="project-thumb" style="background:#1f1a1a;">
+          <span class="project-badge">Personal</span>
           <img src="assets/insumos-organizados-ve.netlify.app.png" alt="Insumos Organizados" width="100%" height="100%">
         </div>
         <div class="project-info">
           <div class="project-name">Insumos Organizados</div>
           <div class="project-cat">Web · insumos organizados</div>
-        </div>  
+          <div class="project-tech">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+        </div>
       </div>
       <!--
       <div class="project-card" data-cat="applications">
@@ -486,7 +563,7 @@
     });
   });
 
-  // Portfolio filter
+  // Portfolio filter (ownership + category)
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
 
@@ -496,11 +573,10 @@
       btn.classList.add('active');
       const filter = btn.dataset.filter;
       projectCards.forEach(card => {
-        if (filter === 'all' || card.dataset.cat === filter) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
+        const matchAll = filter === 'all';
+        const matchOwnership = card.dataset.ownership === filter;
+        const matchCat = card.dataset.cat === filter;
+        card.style.display = (matchAll || matchOwnership || matchCat) ? 'block' : 'none';
       });
     });
   });
