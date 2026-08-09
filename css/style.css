@@ -484,7 +484,12 @@ body {
 }
 .project-info { padding: 12px; }
 .project-name { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
-.project-cat { font-size: 11px; color: var(--text-dim); }
+.project-cat {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.45;
+  margin-top: 2px;
+}
 .project-tech {
   display: flex;
   flex-wrap: wrap;
