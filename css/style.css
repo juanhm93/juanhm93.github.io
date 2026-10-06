@@ -44,6 +44,36 @@ body {
   gap: 0;
 }
 
+/* Language switch ES | EN */
+.lang-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+}
+.lang-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  padding: 3px 7px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+.lang-btn:hover { color: var(--text); }
+.lang-btn[aria-pressed="true"] { color: var(--gold); background: rgba(232,184,75,0.1); }
+.lang-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.lang-sep { font-size: 11px; color: var(--text-dim); margin: 0 1px; }
+
 .avatar-wrap {
   position: relative;
   width: 100px;
@@ -602,7 +632,7 @@ body {
 /* RESPONSIVE */
 @media (max-width: 860px) {
   body { flex-direction: column; padding: 16px; }
-  .sidebar { width: 100%; position: static; }
+  .sidebar { width: 100%; position: relative; }
   .nav-card { align-self: stretch; justify-content: center; flex-wrap: wrap; }
   .services-grid { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: 1fr 1fr; }
