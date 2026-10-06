@@ -381,6 +381,16 @@ body {
 }
 .resume-section-title svg { width: 18px; height: 18px; fill: var(--gold); }
 
+.timeline-group + .timeline-group { margin-top: 28px; }
+.timeline-group-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--gold-dim);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
 .timeline { display: flex; flex-direction: column; gap: 20px; }
 .timeline-item { display: flex; gap: 16px; }
 .timeline-dot {
